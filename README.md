@@ -1,3 +1,9 @@
+## In plain English
+
+Sitescout turns several stock pages into one organized summary. You paste tickers or links, it reads the pages one at a time, and it clearly reports both successful results and anything it could not safely read.
+
+**Status:** Personal browser demonstration; not affiliated with Yahoo Finance.
+
 # Sitescout
 
 A Chrome side panel that reads stock pages for you. Paste Yahoo Finance quote links or tickers (`AAPL, MSFT, NVDA`), press **Scout**, and watch each page get opened in a background tab, read, and closed. You get the key numbers as cards and one CSV file.
