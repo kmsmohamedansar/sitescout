@@ -1,8 +1,10 @@
 ## In plain English
 
-Sitescout turns several stock pages into one organized summary. You paste tickers or links, it reads the pages one at a time, and it clearly reports both successful results and anything it could not safely read.
+Sitescout is a prototype for turning stock pages into one organized summary. Its page-reading workflow has been tested on synthetic Yahoo-like pages; live Yahoo has not yet been tested.
 
 **Status:** Personal browser demonstration; not affiliated with Yahoo Finance.
+
+[![Checks](https://github.com/kmsmohamedansar/sitescout/actions/workflows/checks.yml/badge.svg)](https://github.com/kmsmohamedansar/sitescout/actions/workflows/checks.yml)
 
 # Sitescout
 
@@ -61,6 +63,7 @@ If you're in a region where Yahoo shows a cookie consent page, open finance.yaho
 - `npm test` runs unit tests against two **synthetic** pages in `test/fixtures`. These are hand-written to look like Yahoo's markup and use made-up numbers. One has the expected layout; the other is a "redesigned" version used to prove the loud failure.
 - `npm run demo` loads the real built extension in Chromium and drives it end to end. Chromium is pointed at a local server that answers for finance.yahoo.com with the synthetic pages, so Yahoo is never contacted. This produced the screenshots in `docs/screenshots`.
 - The live Yahoo site has **not yet** been tested. See NOTES.md.
+- GitHub Actions runs the unit tests and builds the extension; it does not run the interactive Chromium demo or test live Yahoo.
 
 ## Stack
 
